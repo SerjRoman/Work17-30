@@ -1,0 +1,12 @@
+let messageBox1 = document.createElement("div");
+messageBox1.className = "MessageBox";
+let messageBox2 = document.createElement("div");
+messageBox2.className = "MessageBox";
+let messageBox3 = document.createElement("div");
+messageBox3.className = "MessageBox";
+messageBox1.innerHTML = "Ім'я користувача має містити ваше ім'я та прізвище. Наприклад: ЛунатийГусь12";
+messageBox2.innerHTML = "Ім'я користувача має містити ваше ім'я та прізвище. Наприклад: ЛунатийГусь12";
+messageBox3.innerHTML = "Ім'я користувача має містити ваше ім'я та прізвище. Наприклад: ЛунатийГусь12";
+document.body.append(messageBox1);
+document.body.append(messageBox2);
+document.body.append(messageBox3);
