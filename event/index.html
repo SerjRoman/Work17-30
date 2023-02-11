@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <input type="button" value="Toma">
+        <a href="https://www.google.com/">Ксения</a>
+    </div>
+    <script>
+        let divElem = document.querySelector('.content');
+        const inputElem = document.querySelector('input');
+        const aElem = document.querySelector('a');
+
+        aElem.addEventListener('click', (event) => event.preventDefault());
+
+        function showTarget(event) {
+            console.log(`target: ${event.target}, currentTarget: ${event.currentTarget}`);
+        }
+        
+
+        inputElem.addEventListener('click', showTarget);
+
+        divElem.addEventListener('click', showTarget);
+
+        document.body.addEventListener('click', showTarget);
+
+
+    </script>
+</body>
+</html>
