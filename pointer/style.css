@@ -1,0 +1,41 @@
+/* устанавливаем внутриний и внешний отступы элемента на всех сторонах равными нулю. Устанавливаем способ расчета ширины и высоты элемента */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Задаем высоту на весь екран классу контент */
+.content{
+    height: 100vh;
+}
+/* Создание области экрана залитую градиентом, с чёрной обводкой в правой части */
+.side-menu{
+    height: 100%;
+    width: 300px;
+    background: rgb(2,0,36);
+    background: linear-gradient(202deg, rgba(2,0,36,1) 0%, rgba(9,121,120,1) 35%, rgba(0,212,255,1) 100%); 
+    border-right: 4px solid black;
+    opacity: 0;
+}
+.side-menu .side-nav ul li{
+    display: flex;
+    /* Фон ставим - бисквитный */
+    background-color: bisque;
+    /* Делаем высоту 50 пикселей, для наших li (list-item) */
+    height: 50px;
+    /* Всё содержимое li (list-item) ставим в центр */
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    /* Делаем черную границу снизу 2 пикселя шириной */
+    border-bottom: 2px solid black;
+}
+.side-menu .side-nav ul li a{
+    /* кастомизируем текст  */
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;  
+}
+
+
