@@ -1,0 +1,24 @@
+body{
+    background-image: radial-gradient(
+        circle at center, 
+        #ffe693,
+        #a9ffdb);
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.coding {
+    background-color: rgba(255, 224, 157, 0.5);
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
