@@ -1,4 +1,4 @@
-// Алексей  создания функции класлита и селектора
+// создания функции класлита и селектора
 function startDrag(event){
     // 
     event.target.classList.add("selected");
