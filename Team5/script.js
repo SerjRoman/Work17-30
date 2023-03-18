@@ -8,15 +8,15 @@ const buttonAuth = document.querySelector('.button-auth');
 const formAuth = document.querySelector('.form_auth');
 // Установка события "click" на переменную buttonAuth
 buttonAuth.addEventListener('click', (event)=>{
-    // 
+    // Скрытие формы formReg
     formReg.style.display = "none";
-    // 
+    // Отображение формы formAuth
     formAuth.style.display = "block";
 })
 // Установка события "click" на переменную buttonReg
 buttonReg.addEventListener('click', (event)=>{
-    // 
+    // Отображение формы formReg
     formReg.style.display = "block";
-    // 
+    // Скрытие формы formAuth
     formAuth.style.display = "none";
 })
