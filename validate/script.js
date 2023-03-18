@@ -13,8 +13,6 @@ form.addEventListener('submit', (event) => {
     // Удалить все ошибки
     // У ошибок есть класс Error
 
-
-
     //результат отправки формы
     let result = true;
     // перебор всех елементов input

@@ -1,29 +1,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- подключаем CSS -->
+    <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
+    <!-- подключаем JS -->
+    <script defer src="script.js"></script>
 </head>
 
 <body>
+    <!-- создаём главный ди с класом content -->
     <div class="content">
-        <div class="form_reg">
+        <!-- создаём форму с класом form_reg -->
+        <form class="form_reg">
+            <!-- Загаловок 2 уровня с текстом  -->
+            <h2>Пройдіть реєстрацію, щоб почати</h2>
+            <!-- див с полями -->
             <div class="inputDiv">
-                <p>Ім'я користувача:</p>
-                <input type="text" class="name" required>
-                <p>Електрона пошта:</p>
-                <input type="email" class="email" required>
-                <p>Пароль:</p>
-                <input type="password" class="password" required>
+                <!-- текст для поля name -->
+                <label for="name">Ім'я користувача:</lable>
+                <!-- поле куда нужно вводить имя користувача -->
+                <input type="text" id="name" required>
+                <!-- текст для поля email -->
+                <label for="email">Електрона пошта:</lable>
+                <!-- поле куда нужно вводить почту пользователя -->
+                <input type="email" id="email" required>
+                <!-- текст для поля password -->
+                <label for="password">Пароль:</lable>
+                <!-- поле куда нужно вводить пароль -->
+                <input type="password" id="password" required>
+                <!-- текст для поля passwordConfim -->
+                <label for="passwordConfirm">Підтвердження пароля:</lable>
+                <!-- поле куда нужно вводить пароль ещё раз -->
+                <input type="password" id="passwordConfirm" required>
+            </div>
+            <!-- создаём див с кнопкой -->
+            <div class="buttonDiv">
+                <!-- кнопка регистрации -->
+                <p><input type="submit" value="Регістрація"></p>
+            </div>
+            <!--  -->
+            <div class="help-block">
+                <div class="help-item">
+                    <button>Забули пароль</button>
+                </div>
+                <div class="help-item">
+                    <button class="button-auth" type="button">Вже є обліковий запис?</button>
+                </div>
+            </div>
+        </form>
+        <form action="#" class="form_auth">
+            <h2>З поверненням на наш сайт</h2>
+            <div class="inputDiv">
+                <label for="email">Електрона пошта:</label>
+                <input type="email" id="email">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password">
+
             </div>
             <div class="buttonDiv">
-                <p><input type="button" value="Регістрація"></p>
+                <button type="submit">Авторизуватися</button>
             </div>
-        </div>
+            <div class="help-block">
+                <div class="help-item">
+                    <button>Забули пароль</button>
+                </div>
+                <div class="help-item">
+                    <button class="button-reg" type="button">Немає облікового запису?</button>
+                </div>
+            </div>
+        </form>
     </div>
-
-    <script scr="script.js"></script>
 </body>
 
 </html>
