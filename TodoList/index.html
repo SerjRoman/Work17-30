@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="block-tasks">
+            <div class="main">
+                <div class="header_div">
+  
+                    <h1 class="header_h1">Ваші задачі на сьогодні</h1>
+  
+                </div>
+                <ul class="list-tasks">
+                    <li class="task">
+                        <div class="text-task">
+                            <h1>Задача 1</h1>
+                            <p>Опис задачі</p>
+                        </div>
+                        <div class="delete-task">
+                            &Cross;
+                        </div>
+                    </li>
+                    <li class="task">
+                        <div class="text-task">
+                            <h1>Задача 2</h1>
+                            <p>Опис задачі 2</p>
+                        </div>
+                        <div class="delete-task">
+                            &Cross;
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer">
+                <hr>
+                <button id="buttonModalWindow">Створити задачу</button>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="modal-window">
+        <div class="name-task">
+            <label for="nameTask">
+                Введіть ім'я задачі:
+            </label>
+            <input type="text" id="nameTask" required>
+        </div>
+        <div class="description-task">
+            <label for="descriptionTask">
+                Опис задачі:
+            </label>
+            <textarea id="descriptionTask" type="text" maxlength="100" rows="5" cols="20"></textarea>
+        </div>
+        <button id="buttonCreateTask">Створити задачу</button>
+    </div>
+</body>
+</html>
